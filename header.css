@@ -1,0 +1,281 @@
+
+
+body,
+html {
+      padding: 0;
+      margin: 0;
+      font-size: 0;
+    }
+.header{
+  position: relative;
+}
+/* .container-top{
+  width: 100%;
+  height: 120px;
+  background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2a9e6d….jpg?w=5120&h=240);
+} */
+
+
+/* 网站顶部条 */
+.site-topbar {
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      background-color: rgb(51, 51, 51);
+      position: relative;
+    }
+.container{
+  width: 1226px;
+  margin: 0 auto;
+}
+.topbar-nav{
+  float:left;
+  height: 40px;
+  line-height: 40px;
+}
+/* 顶部导航栏部分 */
+.site-topbar a {
+      text-decoration: none;
+      color: #B0B0B0;
+    }
+.site-topbar a:hover {
+      color:#DEFFFF;
+    }
+
+.stip{
+    margin:0 3px;
+    color:#423C37
+  }
+/* 顶部购物车部分 */
+.shoping {
+      display:block;
+      float: right;
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+      background-color: rgb(66, 66, 66);
+      text-align: center;
+      position: relative;
+      margin-left: 20px;
+      color:#B0B0B0;
+      z-index: 999;
+    }
+
+.shoping:hover{
+      background-color: #fff;
+      color: #FF6700;
+    }
+.hr{
+      width: 320px;
+      height: 0;
+     float:right;
+      overflow: hidden;
+    }
+.shoping:hover .hr{
+      position: relative;
+      width: 320px;
+      height: 90px;
+      color:black;
+      z-index: 999;
+      background-color: #fff;
+    }
+/* 顶部注册登录部分 */
+    .login {
+      height: 40px;
+      line-height: 40px;
+      float: right;
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+
+    }
+    /* 头部 */
+.site-header{
+  margin: 0;
+  height: 100px;
+}
+.container{
+width: 1226px;
+margin:0 auto;
+}
+/* 头部logo部分 */
+.header-logo {
+  display: block;
+  background-color:#FF6700;
+  float: left;
+  width: 62px;
+  margin-top: 22px;
+  position: relative;
+}
+.header-logo{
+  display: block;
+  height: 55px;
+  width: 55px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .header-logo::before{
+  content: '';
+  background-image: url(https://s02.mifile.cn/assets/static/image/mi-logo.png);
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  transition: .3s;
+}
+
+.container .header-logo:hover::before{
+  left:55px;
+  transition: .3s;
+}
+.container .header-logo::after{
+  content:'';
+  background-color:#FF6700;
+  background-image: url(https://s02.mifile.cn/assets/static/image/mi-home.png) ;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 55px;
+}
+.container .header-logo:hover::after{
+  left:0;
+  transition: .3s;
+}
+/* 头部导航栏部分 */
+.header-nav{
+  width: 850px;
+  float: left;
+  position: relative;
+  left: 100px;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+.st{
+  float: left;
+  width: 1130px;
+  /* height: 100px; */
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0;
+
+  margin-top:30px ;
+}
+.header-nav li:hover{
+  color: #FF832F;
+}
+.st>li{
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+
+}
+.first-span {
+  float: right;
+  position: relative;
+  padding: 8px;
+  font-size: 16px;
+}
+.header-product{
+
+  box-sizing: border-box;
+  width: 1360px;
+  height: 0px;
+  position: absolute;
+  left: -220px;
+  top:98px;
+  overflow: hidden;
+  transition-delay: 0.3s;
+  border: 1px solid #E0E0E0;
+  background-color:  #FFFFFF;
+  z-index: 999;
+}
+.header-nav .st li:hover .header-product{
+  color: #FF832F;
+  height: 230px;
+ transition: 0.1s;
+
+}
+
+.header-p-new{
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  height: 190px;
+  float: left;
+  position: relative;
+  left:30px ;
+  margin-top: 40px;
+  margin-right: 10px;
+  font-size: 10px;
+  text-align: center;
+  z-index: 10;
+}
+.header-p-new a{
+  text-decoration: none;
+  color: black;
+}
+.header-p-new::after{
+  display: block;
+  content: '';
+  width:0px;
+  height: 110px;
+  border: 1px solid #E0E0E0;
+  position: relative;
+  left: 200px;
+  top: -140px;
+}
+
+.header-p-new:nth-child(6)::after{
+  border-style: none;
+}
+
+.header-p-new img{
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  left: 20px;
+}
+   /* 头部搜索框部分 */
+.header-search{
+  width: 300px;
+  height: 50px;
+  float: right;
+  position: relative;
+  top:25px;
+
+}
+.search-logo{
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border:2px solid #E0E0E0;
+  border-left-style: none;
+  float:right;
+  text-align: center;
+  line-height: 50px;
+}
+  .search-logo:hover {
+    background-color: #FF6700;
+  }
+  .search-content{
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    border:2px solid #E0E0E0;
+  }
+  .search-comment{
+    position: relative;
+    top:-36px;
+    left: 160px;
+    font-size: 12px;
+    color: #B48875;
+    background-color: #EEEEEE;
+    text-decoration-line: none;
+  }
+  .search-comment:hover{
+    background-color: #FF6700;
+    color: #FFF5FF;
+  }
